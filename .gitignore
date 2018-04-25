@@ -1,0 +1,7 @@
+dist/
+node_modules/
+**/.DS_Store
+.firebaserc
+firebase-debug.log
+firebase.json
+src/files/blog/**/
