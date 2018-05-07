@@ -3,20 +3,16 @@ import React from 'react';
 
 class LabSection extends React.Component {
     
-    constructor(props) {
-        super(props);
-    }
-    
     render() {
-        
-        
+            
         const lang = this.props.language;
     
-            return (
+        return (
                 <div>
                   <p>Lab {lang}</p>          
                 </div>  
-            )
+        )
+        
     }
 
 }

@@ -11,6 +11,18 @@
   font-size: large;
 }
 
+.flag {
+    height:18px;
+    margin: 2px;
+}
+
+.flagsArea {
+    position: absolute;
+    right: 20px;
+    width: 100px;
+    top: 15px;
+}
+
 .mainContent {
     margin-top:60px;
     text-align: justify;
