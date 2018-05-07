@@ -1,23 +1,12 @@
-import React, { Component } from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import React from 'react';
 
-///////CSS
-import '../css/App.css';
+const CVSection = () => (
 
-class CVSection extends React.Component {
-  render() {
-      
-    if(this.props.language === 'es') {
-      return (
-         <p>CV es</p>          
-        );
-    } else {
-        return (
-          <p>CV en</p>
-        );
-    }
-    
-  }
-}
+    <div>
+      <p>CV</p>          
+    </div>      
+
+
+)
 
 export default CVSection;

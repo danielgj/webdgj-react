@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Header from './Header';
 import Footer from './Footer';
 import MainSection from './MainSection';
 import LabSection from './LabSection';
@@ -11,82 +11,64 @@ import ContactSection from './ContactSection';
 ///////CSS
 import '../css/App.css';
 
-
-class Container extends React.Component {
-  
+class App  extends React.Component {
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+          language: "en"  
+        };
+    }
+    
     render() {
         
-      const currentLang = this.props.language;    
-      const changeLangFunc  = this.props.changeLang;
+      const lang = this.state.language;
         
       return (
-        <Router>
-            <div className="container">
-                <Route exact path="/" component={MainSection} language={currentLang} changeLang = { changeLangFunc }/>
-                <Route path="/lab" component={LabSection} language={currentLang} changeLang = { changeLangFunc }/>
-                <Route path="/cv" component={CVSection} language={currentLang} changeLang = { changeLangFunc }/>
-                <Route path="/blog" component={BlogSection} language={currentLang} changeLang = { changeLangFunc }/>
-                <Route path="/contact" component={ContactSection} language={currentLang} changeLang = { changeLangFunc }/>
-            </div>
-        </Router>
-      );
+
+          <Router>
+              <div className="App">        
+                <header>
+                      <Navbar fixedTop className="navbar-expand-lg navbar-inverse">
+                          <Navbar.Header>
+                            <Navbar.Brand>
+                              Daniel García Jones
+                            </Navbar.Brand>
+                          </Navbar.Header>
+                          <Nav>
+                            <NavItem eventKey={1}>
+                              <Link to="/">Inicio</Link>
+                            </NavItem>
+                            <NavItem eventKey={2}>
+                              <Link to="/lab">Laboratorio</Link>
+                            </NavItem>   
+                            <NavItem eventKey={3}>
+                              <Link to="/cv">Curriculum</Link>
+                            </NavItem> 
+                            <NavItem eventKey={4}>
+                              <Link to="/blog">Blog</Link>
+                            </NavItem> 
+                            <NavItem eventKey={5}>
+                              <Link to="/contact">Contacto</Link>
+                            </NavItem> 
+                          </Nav>
+                      </Navbar>          
+                </header>
+                <div className="container mainContent">
+                    <Route exact path="/" component={() => <MainSection language={lang}/>} />
+                    <Route path="/lab" component={() => <LabSection language={lang}/>} />
+                    <Route path="/cv" component={() => <CVSection language={lang}/>} />
+                    <Route path="/blog" component={() => <BlogSection language={lang}/>} />
+                    <Route path="/contact" component={() => <ContactSection language={lang}/>} />
+                </div>
+                <Footer />        
+              </div>
+            </Router>   
+        )
         
     }
-}
 
 
-class App extends Component {
-    
-  changeLanguage() {
-      const currentLang = this.state.lang;
-      if(currentLang === "es") {
-          this.setState({
-            lang: "en"
-          });
-      } else {
-          this.setState({
-            lang: "es"
-          });
-      }
-  }
-    
-  changeSection(id) {
-      const currentSection = this.state.section;
-      alert("Id: " + id)
-      this.setState({
-        section: id
-      });
-  }
-  
-  constructor(props) {
-      super(props);      
-      this.state = {
-        lang: 'es',
-        section: 1
-      };
-  }
-    
-  render() {
-    
-    const currentLang = this.state.lang;    
-    const changeLangFunc  = this.changeLanguage.bind(this);
-    const changeSectionFunc  = this.changeSection.bind(this);
-    const sectionId = this.state.section;
-
-    return (
-        <Router>
-          <div className="App">
-        
-            <Header language={currentLang} changeLang = { changeLangFunc } section = { sectionId } changeSelection = {changeSectionFunc}/>
-
-            <Container language={currentLang} changeLang = { changeLangFunc }/>
-
-            <Footer language={currentLang}/>
-        
-          </div>
-        </Router>
-    );
-  }
 }
 
 export default App;

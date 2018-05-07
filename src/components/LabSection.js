@@ -1,23 +1,24 @@
-import React, { Component } from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import React from 'react';
 
-///////CSS
-import '../css/App.css';
 
 class LabSection extends React.Component {
-  render() {
-      
-    if(this.props.language === 'es') {
-      return (
-         <p>Laboratorio</p>          
-        );
-    } else {
-        return (
-          <p>Lab</p>
-        );
+    
+    constructor(props) {
+        super(props);
     }
     
-  }
+    render() {
+        
+        
+        const lang = this.props.language;
+    
+            return (
+                <div>
+                  <p>Lab {lang}</p>          
+                </div>  
+            )
+    }
+
 }
 
 export default LabSection;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
@@ -11,20 +11,16 @@ class Header extends React.Component {
     
   render() {
       
-    const handleSelect = function(id) {
-      //this.props.changeSelection(id);
-      //alert("Hola");
-    }
-      
+     
     return (
       <header>
           <Navbar fixedTop className="navbar-expand-lg navbar-inverse">
               <Navbar.Header>
                 <Navbar.Brand>
-                  <a href="#home">Daniel García Jones</a>
+                  Daniel García Jones
                 </Navbar.Brand>
               </Navbar.Header>
-              <Nav activeKey={this.props.section} onSelect={handleSelect}>
+              <Nav activeKey={this.props.section}>
                 <NavItem eventKey={1}>
                   <Link to="/">Inicio</Link>
                 </NavItem>

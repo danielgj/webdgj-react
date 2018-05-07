@@ -11,6 +11,11 @@
   font-size: large;
 }
 
+.mainContent {
+    margin-top:60px;
+    text-align: justify;
+}
+
 .separator {
     display:block;
     margin-top: 80px;
@@ -22,6 +27,13 @@
     width: 120px;
     top: -80px;
 }
+
+.footerSocial {
+    position: absolute;
+    top: 0%;      
+    right: 20px;
+    width:150px;
+}
 .socialIcon {
     width:32px;
     position: relative;
@@ -29,10 +41,11 @@
     margin-right: 8px;
 }
 
-.footerCopy, footerContact {
+.footerCopy {
     position: absolute;
-    top: 40%;  
-    left: 50%;
+    right: 40%;
+    left: 40%;
+    top: 25%;
     color: #ffffff;
 }
 

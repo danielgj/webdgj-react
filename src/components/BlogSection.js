@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
-
-///////CSS
-import '../css/App.css';
+import React from 'react';
 
 
 const BlogSection  = () => (
 
-      <p>Blog es</p>          
+    <div>
+     <p>Blog es</p>          
+    </div>
 
 
 )

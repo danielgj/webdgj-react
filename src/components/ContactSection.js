@@ -1,24 +1,12 @@
-import React, { Component } from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import React from 'react';
 
-///////CSS
-import '../css/App.css';
+const ContactSection = () => (
+
+    <div>
+      <p>Contacto</p>          
+    </div>          
 
 
-class ContactSection extends React.Component {
-  render() {
-      
-    if(this.props.language === 'es') {
-      return (
-         <p>Contact es</p>          
-        );
-    } else {
-        return (
-          <p>Contact en</p>
-        );
-    }
-    
-  }
-}
+)
 
 export default ContactSection;
