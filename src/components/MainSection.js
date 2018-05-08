@@ -29,6 +29,7 @@ class MainSection extends React.Component {
     
 
       <div className="container mainContent">
+            <div className="separator"/>
               <Jumbotron>
                   <h1 className="display-4">¡Hola, mundo!</h1>
                   <p className="lead text-justify">Bienvenido a la página personal escrita con React de <span className="font-italic font-bold">Daniel García Jones</span>, Arquitecto de Movilidad y Sr. Business Analyst en Unisys.</p>
@@ -109,11 +110,11 @@ class MainSection extends React.Component {
     } else {
         
         return (
-        <div className="container">
+        <div className="container mainContent">
               <Jumbotron>
                   <h1 className="display-4">¡Hello, world!</h1>
-                  <p className="lead text-justify">Bienvenido a la página personal escrita con React de <span className="font-italic font-bold">Daniel García Jones</span>, Arquitecto de Movilidad y Sr. Business Analyst en Unisys.</p>
-                  <p  className="lead text-justify">Esta web cumple una doble función: exponer al mundo mis datos de contacto y servirme de campo de pruebas para desarrollo web con tecnologías modernas. Además sirve de acceso a mi Blog personal.</p>
+                  <p className="lead text-justify">Wellcome to React personal web page of <span className="font-italic font-bold">Daniel García Jones</span>.</p>
+                  <p  className="lead text-justify">This page is under translation. Please, be patient.</p>
               </Jumbotron>
           </div> 
         )

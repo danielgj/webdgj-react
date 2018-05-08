@@ -104,12 +104,13 @@ class LabSection extends React.Component {
             )
             
         } else {
-            return (
-                <div>
-                  <p>Lab {lang}</p>          
-                </div>  
-            )    
-        }
+        return (
+            <div className="container mainContent">
+                <div className="separator"/>
+                <h1>Page under translation. So sorry!</h1>
+            </div>
+        )
+    }
                     
     }
 

@@ -2,7 +2,15 @@ import React from 'react';
 
 import contactIcon from '../img/contact.png';
 
-const ContactSection = () => (
+class ContactSection  extends React.Component {  
+    
+  render() {
+      
+    const lang = this.props.language;
+      
+    if(lang==="es") {
+        
+        return(
 
     <div className="container mainContent">
       <div className="separator"/>
@@ -48,8 +56,16 @@ const ContactSection = () => (
             </div>
         </section>
     </div>          
-
-
-)
+);
+    } else {
+        return (
+            <div className="container mainContent">
+                <div className="separator"/>
+                <h1>Page under translation. So sorry!</h1>
+            </div>
+        )
+    }
+  }
+}
 
 export default ContactSection;

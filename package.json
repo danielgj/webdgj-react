@@ -2,6 +2,7 @@
   "name": "webdgjreact",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://webreact-65c40.firebaseapp.com/",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^16.3.2",

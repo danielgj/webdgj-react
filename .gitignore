@@ -5,3 +5,4 @@ node_modules/
 firebase-debug.log
 firebase.json
 src/files/blog/**/
+build/
