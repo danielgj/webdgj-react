@@ -11,14 +11,9 @@ import githubIcon from '../img/github.png';
 
 class Footer extends React.Component {  
     
-  constructor(props) {
-     super(props);
-  }
-    
   render() {
       
     const lang = this.props.language;
-    const changeLang = this.props.changeLangFunc;
       
     if(lang==="es") {
       return (

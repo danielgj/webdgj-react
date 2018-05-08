@@ -28,6 +28,10 @@
     text-align: justify;
 }
 
+.blogContain {
+    margin-top: 0px;
+}
+
 .separator {
     display:block;
     margin-top: 80px;
@@ -111,6 +115,16 @@
  font-weight: bold;
 }
 
+.input-group-addon {
+ min-width:100px;
+ font-weight: bold;
+}
+
+.imgContact {
+    margin-left:auto;
+    margin-right:auto;
+    width:250px;
+}
 
 @media screen and (min-width: 320px) {
     .footerImg, .footerCopy {

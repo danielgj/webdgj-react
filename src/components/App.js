@@ -36,8 +36,8 @@ class App  extends React.Component {
 
           <Router>
               <div className="App">        
-                    <Header language={lang} changeLangFunc={this.changeLang}/>
-                    <div className="container mainContent">
+                <Header language={lang} changeLangFunc={this.changeLang}/>
+                <div>
                     <Route exact path="/" component={() => <MainSection language={lang}/>} />
                     <Route path="/lab" component={() => <LabSection language={lang}/>} />
                     <Route path="/cv" component={() => <CVSection language={lang}/>} />

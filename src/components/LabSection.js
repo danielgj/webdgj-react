@@ -17,7 +17,7 @@ class LabSection extends React.Component {
             
             return (
             
-                <div class="container">
+                <div className="container mainContent">
                     
                       <div className="row">
                           <div className="col">
@@ -37,7 +37,7 @@ class LabSection extends React.Component {
                                   <div className="card-body lab-card">
                                     <h5 className="card-title">Foodplanner</h5>
                                     <p className="card-text text-justify">App Android para configuración de planes de comida y listas de la compra compartidas. Utiliza Firebase (Login, Database y Storage).</p>
-                                    <a href="https://play.google.com/store/apps/details?id=com.lulidan.foodplanner" target="_blank" className="btn btn-primary btn-lab">Más información</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.lulidan.foodplanner" target="_blank" className="btn btn-primary btn-lab" rel="noopener noreferrer">Más información</a>
                                   </div>
                                 </div>
                            </div>
@@ -47,7 +47,7 @@ class LabSection extends React.Component {
                                   <div className="card-body lab-card">
                                     <h5 className="card-title">FumequeControl</h5>
                                     <p className="card-text text-justify">App Android para ayudar a dejar de fumar contabilizando los cigarros fumados y el gasto en tabaco. ALta de cigarros fumados con Wear.</p>
-                                    <a href="https://play.google.com/store/apps/details?id=com.lulidan.fumequecontrol" target="_blank" className="btn btn-primary btn-lab">Más información</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.lulidan.fumequecontrol" target="_blank" className="btn btn-primary btn-lab" rel="noopener noreferrer">Más información</a>
                                   </div>
                                 </div>
                            </div>
@@ -57,7 +57,7 @@ class LabSection extends React.Component {
                                   <div className="card-body lab-card">
                                     <h5 className="card-title">Control de Inventario</h5>
                                     <p className="card-text text-justify">Solución Full Stack web y móvil. Permite el alta de un inventario categorizado y la gestión de préstamos y devoluciones de los elementos.</p>
-                                    <a href="https://github.com/danielgj/imt-ionic-app" target="_blank" className="btn btn-primary btn-lab">Más información</a>
+                                    <a href="https://github.com/danielgj/imt-ionic-app" rel="noopener noreferrer" target="_blank" className="btn btn-primary btn-lab">Más información</a>
                                   </div>
                                 </div>
                            </div>           
@@ -67,7 +67,7 @@ class LabSection extends React.Component {
                                   <div className="card-body lab-card">
                                     <h5 className="card-title">My IT Game</h5>
                                     <p className="card-text text-justify">Aplicación web gamificada para ayudar a equipos de desarrollo software a implementar prácticas de integración continua.</p>
-                                    <a href="https://github.com/danielgj/itgame-web/" taget="_blank" className="btn btn-primary btn-lab">Más información</a>
+                                    <a href="https://github.com/danielgj/itgame-web/" rel="noopener noreferrer" target="_blank" className="btn btn-primary btn-lab">Más información</a>
                                   </div>
                                 </div>
                            </div>    
@@ -82,7 +82,7 @@ class LabSection extends React.Component {
                               <p className="text-justify">En ese afan, he decido crear esta versión de mi página personal usando esta tecnología.</p>
                               <p>Como resumen listo aquí algunas de las cosas que estoy haciendo (de momento) en esta web:</p>
                               <ul>
-                                  <li><b>Github:</b> He subido el código a un <a href="https://github.com/danielgj/webdgj-react" target="_blank">repositorio público</a> y lo licenciaré con alguna licencia Open Source para quue quien quiera pueda coger el código y usarlo, extenderlo, etc.</li>
+                                  <li><b>Github:</b> He subido el código a un <a href="https://github.com/danielgj/webdgj-react" target="_blank" rel="noopener noreferrer">repositorio público</a> y lo licenciaré con alguna licencia Open Source para quue quien quiera pueda coger el código y usarlo, extenderlo, etc.</li>
                                   <li><b>Uso de React-Boostrap:</b> Lo que explica porque es tan fea y en algunos puntos diferente a la web original que toma como modelo ya que React-bootsrap usa Bootsrap 3. La idea es adaptar el template original de Boostrap 4 y que siga siendo 100% responsive y se comporte adecuadamente en cualquier tipo de pantalla.</li>
                                   <li><b>Uso de React-Router:</b> Aunque de momento el enrutado es bastante sencillo, si estoy pasando alguna propiedad y modificándola desde el componente Header para soportar el multidioma.</li>
                               </ul>

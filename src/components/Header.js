@@ -8,10 +8,6 @@ import enIcon from '../img/uk_flag.png';
 
 class Header extends React.Component {  
     
-  constructor(props) {
-     super(props);
-  }
-    
   render() {
       
     const lang = this.props.language;

@@ -20,20 +20,15 @@ import githubIcon from '../img/github.png'
 class MainSection extends React.Component {
     
         
-  constructor(props) {
-     super(props);
-  }
-    
   render() {
       
     const lang = this.props.language;
-    const changeLang = this.props.changeLangFunc;
       
     if(lang==="es") {
         return (
     
 
-      <div className="container">
+      <div className="container mainContent">
               <Jumbotron>
                   <h1 className="display-4">¡Hola, mundo!</h1>
                   <p className="lead text-justify">Bienvenido a la página personal escrita con React de <span className="font-italic font-bold">Daniel García Jones</span>, Arquitecto de Movilidad y Sr. Business Analyst en Unisys.</p>
