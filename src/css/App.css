@@ -61,11 +61,44 @@
     color: #ffffff;
 }
 
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-body {
+    padding: 2px 16px;
+}
+
+.card-img-top {
+    width:100%;
+}
 
 .lab-card {
-    min-height: 280px;    
+    min-height: 250px;    
     display: block;
     position: relative;
+}
+
+.card-text {
+    font-size: 1.50rem;
+}
+
+.card-title {
+    margin-top: 1.00rem;
+    margin-bottom: 1.00rem;
+    font-size: 2.00rem;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 1.2;
+    color: inherit;
 }
 
 .btn-lab {
