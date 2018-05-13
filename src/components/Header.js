@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
+import i18n from './i18n';
 
 import esIcon from '../img/es_flag.png';
 import enIcon from '../img/uk_flag.png';
@@ -11,9 +12,10 @@ class Header extends React.Component {
   render() {
       
     const lang = this.props.language;
+    
+    const t = i18n.getKey;
+
     const changeLang = this.props.changeLangFunc;
-      
-    if(lang==="es") {
         return (
             <header>
                       <Navbar fixedTop className="navbar-expand-lg navbar-inverse">
@@ -24,64 +26,28 @@ class Header extends React.Component {
                           </Navbar.Header>
                           <Nav>
                             <NavItem eventKey={1}>
-                              <Link to="/">Inicio</Link>
+                              <Link to="/">{t(lang,"home")}</Link>
                             </NavItem>
                             <NavItem eventKey={2}>
-                              <Link to="/lab">Laboratorio</Link>
+                              <Link to="/lab">{t(lang,"lab")}</Link>
                             </NavItem>   
                             <NavItem eventKey={3}>
-                              <Link to="/cv">Curriculum</Link>
+                              <Link to="/cv">{t(lang,"cv")}</Link>
                             </NavItem> 
                             <NavItem eventKey={4}>
-                              <Link to="/blog">Blog</Link>
+                              <Link to="/blog">{t(lang,"blog")}</Link>
                             </NavItem> 
                             <NavItem eventKey={5}>
-                              <Link to="/contact">Contacto</Link>
+                              <Link to="/contact">{t(lang,"contact")}</Link>
                             </NavItem> 
                           </Nav>
                           <div className="flagsArea">
-                              <img src={esIcon} alt="Español" title="Español" className="flag" onClick={() => changeLang('es')}/>
-                              <img src={enIcon} alt="Inglés" title="Inglés" className="flag" onClick={() => changeLang('en')}/>
+                              <img src={esIcon} alt={t(lang,"es")} title={t(lang,"es")} className="flag" onClick={() => changeLang('es')}/>
+                              <img src={enIcon} alt={t(lang,"en")} title={t(lang,"en")} className="flag" onClick={() => changeLang('en')}/>
                           </div>                          
                       </Navbar>          
-                </header>
-                
-        );    
-    } else {
-        return (
-            <header>
-                      <Navbar fixedTop className="navbar-expand-lg navbar-inverse">
-                          <Navbar.Header>
-                            <Navbar.Brand>
-                              Daniel García Jones
-                            </Navbar.Brand>
-                          </Navbar.Header>
-                          <Nav>
-                            <NavItem eventKey={1}>
-                              <Link to="/">Home</Link>
-                            </NavItem>
-                            <NavItem eventKey={2}>
-                              <Link to="/lab">Lab</Link>
-                            </NavItem>   
-                            <NavItem eventKey={3}>
-                              <Link to="/cv">Curriculum</Link>
-                            </NavItem> 
-                            <NavItem eventKey={4}>
-                              <Link to="/blog">Blog</Link>
-                            </NavItem> 
-                            <NavItem eventKey={5}>
-                              <Link to="/contact">Contact</Link>
-                            </NavItem> 
-                          </Nav>
-                          <div className="flagsArea">
-                              <img src={esIcon} alt="Spanish" title="Spanish" className="flag" onClick={() => changeLang('es')}/>
-                              <img src={enIcon} alt="English" title="English" className="flag" onClick={() => changeLang('en')}/>
-                          </div>
-                      </Navbar>          
-                </header>
-                
-        );
-    }
+                </header>                             
+        )
      
     
   }

@@ -2,12 +2,15 @@
   "name": "webdgjreact",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://webreact-65c40.firebaseapp.com/",
+  "homepage": "https://webreact-65c40.firebaseapp.com/",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "i18next": "^11.3.1",
+    "i18next-browser-languagedetector": "^2.2.0",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.2",
+    "react-i18next": "^7.6.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4"
   },

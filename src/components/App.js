@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import Header from './Header';
 import Footer from './Footer';
 import MainSection from './MainSection';
@@ -33,21 +34,21 @@ class App  extends React.Component {
       const lang = this.state.language;
         
       return (
-
-          <Router>
-              <div className="App">        
-                <Header language={lang} changeLangFunc={this.changeLang}/>
-                <div>
-                    <Route exact path="/" component={() => <MainSection language={lang}/>} />
-                    <Route path="/lab" component={() => <LabSection language={lang}/>} />
-                    <Route path="/cv" component={() => <CVSection language={lang}/>} />
-                    <Route path="/blog" component={() => <BlogSection language={lang}/>} />
-                    <Route path="/contact" component={() => <ContactSection language={lang}/>} />
-                </div>
-                <Footer language={lang} />        
-              </div>
-            </Router>   
-        )
+        
+                <Router>
+                  <div className="App">        
+                    <Header language={lang} changeLangFunc={this.changeLang}/>
+                    <div>
+                        <Route exact path="/" component={() => <MainSection language={lang}/>} />
+                        <Route path="/lab" component={() => <LabSection language={lang}/>} />
+                        <Route path="/cv" component={() => <CVSection language={lang}/>} />
+                        <Route path="/blog" component={() => <BlogSection language={lang}/>} />
+                        <Route path="/contact" component={() => <ContactSection language={lang}/>} />
+                    </div>
+                    <Footer language={lang} />        
+                  </div>
+                </Router>              
+      )
         
     }
 
