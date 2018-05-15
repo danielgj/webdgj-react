@@ -41,6 +41,29 @@ class I18n {
                 "about_tech_9": "Échale un ojo al apartado de ",
                 "about_tech_10": " para más información acerca de mis últimos proyectos software.",
                 
+                
+                "old_projects": "Proyectos antiguos",
+                "lab_1": "Esta sección pretende cubrir un poco algunos de los experimentos que vaya realizando para aprender nuevas técnicas y lenguajes. Para hacerla más viva, probablemente tenga que recurrir al blog, pero listaré aquí aquellos proyectos terminados o descontinuados.",
+                "lab_2": "Algunos de estos proyectos ya tienen un tiempo y básicamente me permitieron explorar algunos conceptos. Echando la vista atrás son proyectos a los que tengo cariño pero que a día de hoy desarrollaría de otra manera muy diferente.",
+                "lab_3": "Algunos de estos proyectos están colgados en mi cuenta de Github por si alguien se anima a continuarlos.",
+                "food_planner_descr": "App Android para configuración de planes de comida y listas de la compra compartidas. Utiliza Firebase (Login, Database y Storage).",
+                "more_info": "Más información",
+                "fumeque_control_descr": "App Android para ayudar a dejar de fumar contabilizando los cigarros fumados y el gasto en tabaco. Alta de cigarros fumados con Wear.",
+                "imt_title": "Control de Inventario",
+                "imt_descr": "Solución Full Stack web y móvil. Permite el alta de un inventario categorizado y la gestión de préstamos y devoluciones de los elementos.",
+                "it_game_descr": "Aplicación web gamificada para ayudar a equipos de desarrollo software a implementar prácticas de integración continua.",
+                "about_the_web": "Sobre esta web",
+                "about_the_web_1": "Mi actual proyecto consiste en aprender React. En ese afan, he decido crear esta versión de mi página personal usando esta tecnología.",
+                "about_the_web_2": "Como resumen listo aquí algunas de las cosas que estoy haciendo (de momento) en esta web:",
+                "about_the_web_3": " He subido el código a un ",
+                "about_the_web_4": " y lo licenciaré con alguna licencia Open Source para quue quien quiera pueda coger el código y usarlo, extenderlo, etc.",
+                "public_repo": "repositorio público",
+                "about_the_web_5": " Aunque de momento el enrutado es bastante sencillo, si estoy pasando alguna propiedad y modificándola desde el componente Header para soportar el multidioma.",
+                "about_the_web_6": "Los siguientes pasos serán:",
+                "gulp_usage": "Uso de Gulp para automatización de tareas del desarrollo:",
+                "gulp_descr": " Crear un fichero gulp (o similar) para poder automatizar el desarrollo con React.",
+                "babel_usage": " para poder probar y aprender ECMA6",
+                
                 "phone": "Teléfono"
                 
             },
@@ -78,6 +101,28 @@ class I18n {
                 "about_tech_8": "I also love Android development and I have published a couple of apps in ",
                 "about_tech_9": "Take a look to ",
                 "about_tech_10": " for more information about my latest development projects.",
+                
+                "old_projects": "Old projects",
+                "lab_1": "This section will include several experiments I'm making to learn different techniques. To have this updated, I will also use the blog and list here many old projects.",
+                "lab_2": "Many of them are quite old but all of them allow me to explore different concepts. Probably I will develop them today in a different way.",
+                "lab_3": "Most of them are available in my Github account just in case anyone wants to extend them.",
+                "food_planner_descr": "Android App to configure meal plans and create shared shopping lists. Uses Firebase (Login, Database and Storage).",
+                "more_info": "More info",
+                "fumeque_control_descr": "Android App to help people quit smoking by counting expenses and cigar units. It also has wear companion app.",
+                "imt_title": "Inventary Management",
+                "imt_descr": "Full Stack Solution (web/mobile) to manage inventory and loans of material.",
+                "it_game_descr": "Gamified web solution to help development teams to adopt Continous Integration practices.",
+                "about_the_web": "About this web",
+                "about_the_web_1": "I'm currently learning React.js. This web page is my playground to learn it.",
+                "about_the_web_2": "Actually, this are the tools I'm using:",
+                "about_the_web_3": " I've uploaded the code to my ",
+                "about_the_web_4": " and I will license it with some sort of Open Source license just in case anyone wants to reuse this.",
+                "public_repo": "public repository",
+                "about_the_web_5": " Even when the routing is quite simple and state props are only language, active menu item and CV sections displayed.",
+                "about_the_web_6": "Next steps:",
+                "gulp_usage": "Gulp usage.",
+                "gulp_descr": "",
+                "babel_usage": " to learn and try ECMA6.",
                 
                 "phone": "Phone"
             }
