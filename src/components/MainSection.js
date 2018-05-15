@@ -6,6 +6,7 @@ import i18n from './i18n';
 import dgjLogronyo from '../img/dgj.jpg';
 import htmlIcon from '../img/html.jpg';
 import bootsrapIcon from '../img/bootstrap-stack.png';
+import reactIcon from '../img/react.png';
 import saasIcon from '../img/saas.svg';
 import gulpIcon from '../img/gulpjs-retina-preview.png';
 import jasmineIcon from '../img/jasmine.svg';
@@ -78,13 +79,13 @@ class MainSection extends React.Component {
                            <div className="row">
                                <div className="col col-md-4 align-middle"><img src={htmlIcon} className="img-fluid" title="HTML+CSS+JS" alt="HTML+CSS+JS"/></div>
                                <div className="col col-md-4 align-middle"><img src={bootsrapIcon} className="img-fluid" title="Bootstrap" alt="Bootstrap"/></div>
-                               <div className="col col-md-4 align-middle"><img src={saasIcon} className="img-fluid" title="Saas" alt="Saas"/></div>
+                               <div className="col col-md-4 align-middle"><img src={reactIcon} className="img-fluid" title="React.js" alt="React.js"/></div>
                            </div>
 
                                   <div className="row">
                                       <div className="col col-md-4 align-middle"><img src={gulpIcon} className="img-fluid" title="Gulp" alt="Gulp"/></div>
                                       <div className="col col-md-4 align-middle"><img src={jasmineIcon} className="img-fluid" title="Jasmine" alt="Jasmine"/></div>
-                                      <div className="col col-md-4 align-middle"><img src={babelIcon} className="img-fluid" title="Babel" alt="Babel"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={saasIcon} className="img-fluid" title="Saas" alt="Saas"/> </div>                                     
                                   </div>
 
                                   <div className="row">
@@ -96,12 +97,13 @@ class MainSection extends React.Component {
                                   <div className="row">
                                       <div className="col col-md-4 align-middle"><img src={androidIcon} className="img-fluid" title="Android" alt="Android"/></div>
                                       <div className="col col-md-4 align-middle"><img src={githubIcon} className="img-fluid" title="Github" alt="Github"/></div>
-                                      <div className="col col-md-4 align-middle"></div>
+                                      <div className="col col-md-4 align-middle"><img src={babelIcon} className="img-fluid" title="Babel" alt="Babel"/></div>
                                   </div>
 
                        </div>
                     </div>
                 </section>
+
 
                 <div className="separator"></div>
         </div>  

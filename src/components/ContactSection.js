@@ -20,10 +20,7 @@ class ContactSection extends React.Component {
 
                   <section>
                         <div className="row">
-                                <div className="col col-md-4 col-sm-12 hidden-md-down">
-                                    <img src={contactIcon} alt="Contacto" className="img-fluid"/>
-                                </div>
-                                <div className="col col-md-8 col-sm-12 ">
+                                <div className="col">
                                       <div className="input-group">
                                         <div className="input-group-addon">                              
                                           <span className="input-group-text input-label" id="inputGroupPrepend">Email</span>
