@@ -19,40 +19,40 @@ class ContactSection extends React.Component {
                   <div className="separator"/>
 
                   <section>
-                        <div class="row">
+                        <div className="row">
                                 <div className="col col-md-4 col-sm-12 hidden-md-down">
                                     <img src={contactIcon} alt="Contacto" className="img-fluid"/>
                                 </div>
                                 <div className="col col-md-8 col-sm-12 ">
-                                      <div class="input-group">
-                                        <div class="input-group-addon">                              
-                                          <span class="input-group-text input-label" id="inputGroupPrepend">Email</span>
+                                      <div className="input-group">
+                                        <div className="input-group-addon">                              
+                                          <span className="input-group-text input-label" id="inputGroupPrepend">Email</span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="danielgj@gmail.com" aria-describedby="inputGroupPrepend" disabled/>
+                                        <input type="text" className="form-control" placeholder="danielgj@gmail.com" aria-describedby="inputGroupPrepend" disabled/>
                                       </div>
-                                      <div class="input-group">
-                                        <div class="input-group-addon">
-                                          <span class="input-group-text  input-label" id="inputGroupPrepend">{t(lang,"phone")}</span>
+                                      <div className="input-group">
+                                        <div className="input-group-addon">
+                                          <span className="input-group-text  input-label" id="inputGroupPrepend">{t(lang,"phone")}</span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="+34 625 625 009" aria-describedby="inputGroupPrepend" disabled/>
+                                        <input type="text" className="form-control" placeholder="+34 625 625 009" aria-describedby="inputGroupPrepend" disabled/>
                                       </div>
-                                      <div class="input-group">
-                                        <div class="input-group-addon">
-                                          <span class="input-group-text  input-label" id="inputGroupPrepend">Twitter</span>
+                                      <div className="input-group">
+                                        <div className="input-group-addon">
+                                          <span className="input-group-text  input-label" id="inputGroupPrepend">Twitter</span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="@danielgarjones" aria-describedby="inputGroupPrepend" disabled/>
+                                        <input type="text" className="form-control" placeholder="@danielgarjones" aria-describedby="inputGroupPrepend" disabled/>
                                       </div>
-                                      <div class="input-group">
-                                        <div class="input-group-addon">
-                                          <span class="input-group-text  input-label" id="inputGroupPrepend">LinkedIn</span>
+                                      <div className="input-group">
+                                        <div className="input-group-addon">
+                                          <span className="input-group-text  input-label" id="inputGroupPrepend">LinkedIn</span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="https://www.linkedin.com/in/dgarciaj/" aria-describedby="inputGroupPrepend" disabled/>
+                                        <input type="text" className="form-control" placeholder="https://www.linkedin.com/in/dgarciaj/" aria-describedby="inputGroupPrepend" disabled/>
                                       </div>
-                                      <div class="input-group">
-                                        <div class="input-group-addon">
-                                          <span class="input-group-text  input-label" id="inputGroupPrepend">Github</span>
+                                      <div className="input-group">
+                                        <div className="input-group-addon">
+                                          <span className="input-group-text  input-label" id="inputGroupPrepend">Github</span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="https://github.com/danielgj" aria-describedby="inputGroupPrepend" disabled/>
+                                        <input type="text" className="form-control" placeholder="https://github.com/danielgj" aria-describedby="inputGroupPrepend" disabled/>
                                       </div>
                                 </div>
 

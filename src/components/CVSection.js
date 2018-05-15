@@ -71,8 +71,8 @@ class CVSection extends React.Component {
                     </p>
 
 
-                    <div className="collapse" id="empleos" aria-expanded={this.state.openEmpleos}>
-                        <div class="card card-body">
+                    <div className="card" id="empleos" style={{visibility: this.state.openEmpleos ? 'visible' : 'hidden' }}>
+                        <div className="card card-body">
                           <h3><b>Unisys (Madrid)</b> desde Marzo 2011.</h3>
                             <p className="text-justify">Comencé como Consultor SAP, migré hacia el diseño y desarrollo de apps móviles y actualmente estoy dedicado a la Preventa de Soluciones de Movilidad y a tareas de Jefe de Proyecto, Scrum Master y Arquitecto de Soluciones Móviles. Entre los principales clientes para los que he trabajado se encuentran Enaire, Endesa, Repsol, Vodafone, Telefónica, Claro, Ministerio de Empleo y Seguridad Social, Ministerio de Fomento, EUIPO, IFEMA y TMB.</p>
 
@@ -88,15 +88,15 @@ class CVSection extends React.Component {
                         </div>                      
                     </div>
 
-                    <div class="collapse" id="educacion" aria-expanded={this.state.openEducacion}>
-                        <div class="card card-body">
+                    <div className="card" id="educacion" style={{visibility: this.state.openEducacion ? 'visible' : 'hidden' }}>
+                        <div className="card card-body">
                           <h3><b>Ingeniero Técnico en Sistemas de Telecomunicación.</b> Universidad Carlos III Madrid (2004).</h3>
                             <p className="text-justify">Proyecto Fin de Carrera con Matrícula de Honor sobre <a href="https://webdgj-241b4.firebaseapp.com/files/dgjonespfc.pdf" rel="noopener noreferrer" target="_blank">Herramienta CASE de desarrollo de asistentes de navegación Web basada en los diagramas MSC</a></p>
                         </div>                      
                     </div>
 
-                    <div class="collapse" id="certificaciones" aria-expanded={this.state.openCerts}>
-                        <div class="card card-body">
+                    <div className="card" id="certificaciones" style={{visibility: this.state.openCerts ? 'visible' : 'hidden' }}>
+                        <div className="card card-body">
                           <ul>
                                <li>SAFe 4.0 Agilist SA (Marzo 2017)</li>
                                <li><a href="https://www.scrum.org/user/200027" target="_blank" rel="noopener noreferrer">Professional Scrum Master I (Octubre 2016)</a></li>
@@ -108,8 +108,8 @@ class CVSection extends React.Component {
                         </div>                      
                     </div>
 
-                    <div class="collapse" id="skills"  aria-expanded={this.state.openSkills}>
-                        <div class="card card-body">
+                    <div className="card" id="skills"  style={{visibility: this.state.openSkills ? 'visible' : 'hidden' }}>
+                        <div className="card card-body">
                             <h3><b>Idiomas</b></h3>
                           <ul>
                               <li>Español (nativo)</li>
@@ -141,6 +141,7 @@ class CVSection extends React.Component {
                              <li>Express</li>
                              <li>Bootstrap</li>
                              <li>Angular.js</li>
+                             <li>React.js</li>
                              <li>Java</li>
                              <li>J2EE</li>
                              <li>PHP</li>
