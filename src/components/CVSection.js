@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Panel } from 'react-bootstrap';
-
 class CVSection extends React.Component {
     
     constructor(props) {
@@ -33,6 +31,8 @@ class CVSection extends React.Component {
         
             return (
             <div className="container mainContent">
+                
+                <div className="separator"/>
 
                 <section>
                     <p className="text-justify">
@@ -71,9 +71,8 @@ class CVSection extends React.Component {
                     </p>
 
 
-                    <Panel id="collapsible-panel-empleos" expanded={this.state.openEmpleos}>
-                      <Panel.Collapse>
-                        <Panel.Body>
+                    <div className="collapse" id="empleos" aria-expanded={this.state.openEmpleos}>
+                        <div class="card card-body">
                           <h3><b>Unisys (Madrid)</b> desde Marzo 2011.</h3>
                             <p className="text-justify">Comencé como Consultor SAP, migré hacia el diseño y desarrollo de apps móviles y actualmente estoy dedicado a la Preventa de Soluciones de Movilidad y a tareas de Jefe de Proyecto, Scrum Master y Arquitecto de Soluciones Móviles. Entre los principales clientes para los que he trabajado se encuentran Enaire, Endesa, Repsol, Vodafone, Telefónica, Claro, Ministerio de Empleo y Seguridad Social, Ministerio de Fomento, EUIPO, IFEMA y TMB.</p>
 
@@ -86,22 +85,18 @@ class CVSection extends React.Component {
 
                             <h3><b>Universidad Carlos III (Madrid)</b> Septiembre 2001- Septiembre 2003.</h3>
                             <p className="text-justify">Becario del Servicio de Informática. Administración y soporte en aulas informáticas Winsdows y Linux.</p>
-                        </Panel.Body>
-                      </Panel.Collapse>
-                    </Panel>
+                        </div>                      
+                    </div>
 
-                    <Panel id="collapsible-panel-educacion" expanded={this.state.openEducacion}>
-                      <Panel.Collapse>
-                        <Panel.Body>
+                    <div class="collapse" id="educacion" aria-expanded={this.state.openEducacion}>
+                        <div class="card card-body">
                           <h3><b>Ingeniero Técnico en Sistemas de Telecomunicación.</b> Universidad Carlos III Madrid (2004).</h3>
                             <p className="text-justify">Proyecto Fin de Carrera con Matrícula de Honor sobre <a href="https://webdgj-241b4.firebaseapp.com/files/dgjonespfc.pdf" rel="noopener noreferrer" target="_blank">Herramienta CASE de desarrollo de asistentes de navegación Web basada en los diagramas MSC</a></p>
-                        </Panel.Body>
-                      </Panel.Collapse>
-                    </Panel>
+                        </div>                      
+                    </div>
 
-                    <Panel id="collapsible-panel-certificaciones" expanded={this.state.openCerts}>
-                      <Panel.Collapse>
-                        <Panel.Body>
+                    <div class="collapse" id="certificaciones" aria-expanded={this.state.openCerts}>
+                        <div class="card card-body">
                           <ul>
                                <li>SAFe 4.0 Agilist SA (Marzo 2017)</li>
                                <li><a href="https://www.scrum.org/user/200027" target="_blank" rel="noopener noreferrer">Professional Scrum Master I (Octubre 2016)</a></li>
@@ -110,13 +105,11 @@ class CVSection extends React.Component {
                                <li><a href="https://www.coursera.org/account/accomplishments/records/W3UkvFfjsrC3y2VM" target="_blank" rel="noopener noreferrer">Pattern-Oriented Software Architectures: Programming Mobile Services for Android Handheld Systems (Mayo 2014)</a></li>
                                <li><a href="https://www.coursera.org/account/accomplishments/records/v8UZ7KXYnk7bh2gY" target="_blank" rel="noopener noreferrer">Programming Mobile Applications for Android Handheld Systems (Enero 2014)</a></li>                       
                            </ul>
-                        </Panel.Body>
-                      </Panel.Collapse>
-                    </Panel>
+                        </div>                      
+                    </div>
 
-                    <Panel id="collapsible-panel-skills" expanded={this.state.openSkills}>
-                      <Panel.Collapse>
-                        <Panel.Body>
+                    <div class="collapse" id="skills"  aria-expanded={this.state.openSkills}>
+                        <div class="card card-body">
                             <h3><b>Idiomas</b></h3>
                           <ul>
                               <li>Español (nativo)</li>
@@ -171,9 +164,8 @@ class CVSection extends React.Component {
                             <li>MongoDB</li>
                         </ul>
 
-                        </Panel.Body>
-                      </Panel.Collapse>
-                    </Panel>
+                        </div>                      
+                    </div>
 
 
                 </section>

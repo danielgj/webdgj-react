@@ -16,9 +16,12 @@ class LabSection extends React.Component {
         if(lang === 'es') {
             
             return (
-            
+                    
+                
                 <div className="container mainContent">
                     
+                      <div className="separator"/>
+                
                       <div className="row">
                           <div className="col">
                              <h1>Proyectos antiguos</h1>
@@ -27,8 +30,6 @@ class LabSection extends React.Component {
                               <p>Algunos de estos proyectos están colgados en mi cuenta de Github por si alguien se anima a continuarlos.</p>                
                           </div>
                       </div>
-                
-                      <div className="separator"/>
 
                        <div className="row">
                           <div className="col col-12 col-sm-6 col-lg-3">
@@ -73,7 +74,7 @@ class LabSection extends React.Component {
                            </div>    
                         </div>       
 
-                        
+                        <div className="separator"/>
 
                         <div className="row">
                           <div className="col">

@@ -15,14 +15,15 @@ class ContactSection extends React.Component {
         return(
 
                 <div className="container mainContent">
+            
                   <div className="separator"/>
 
                   <section>
                         <div class="row">
-                                <div className="col col-md-4">
-                                    <img src={contactIcon} alt="Contacto" className="imgContact"/>
+                                <div className="col col-md-4 col-sm-12 hidden-md-down">
+                                    <img src={contactIcon} alt="Contacto" className="img-fluid"/>
                                 </div>
-                                <div className="col col-md-8">
+                                <div className="col col-md-8 col-sm-12 ">
                                       <div class="input-group">
                                         <div class="input-group-addon">                              
                                           <span class="input-group-text input-label" id="inputGroupPrepend">Email</span>
@@ -57,6 +58,9 @@ class ContactSection extends React.Component {
 
                         </div>
                     </section>
+
+                    <div className="separator"/>
+                        
                 </div>          
         )
     }

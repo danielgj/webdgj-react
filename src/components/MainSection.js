@@ -1,5 +1,4 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 import i18n from './i18n';
@@ -31,16 +30,16 @@ class MainSection extends React.Component {
     
       <div className="container mainContent">
             <div className="separator"/>
-              <Jumbotron>
+              <div className="jumbotron">
                   <h1 className="display-4">{t(lang,"hello_world")}</h1>
                   <p className="lead text-justify">{t(lang,"wellcome_to")} <span className="font-italic font-bold">Daniel García Jones</span>{t(lang,"mobillity_architect")}</p>
                   <p  className="lead text-justify">{t(lang,"this_Web_function")}</p>
-              </Jumbotron>
+              </div>
             
               <section id="about_me">
                     <div className="row">
                        <div className="col col-12  col-sm-6">
-                           <img src={dgjLogronyo} alt="Daniel García en Logroño" title="Daniel García en Logroño" className="img-responsive img-rounded float-left"/>
+                           <img src={dgjLogronyo} alt="Daniel García en Logroño" title="Daniel García en Logroño" className="rounded float-left img-fluid"/>
                        </div>
                        <div className="col col-12 col-sm-6">
                            <h1>{t(lang,"bio")}</h1>
@@ -77,26 +76,26 @@ class MainSection extends React.Component {
                        </div>
                        <div className="col col-12 col-sm-6">
                            <div className="row">
-                               <div className="col col-md-4 align-middle"><img src={htmlIcon} className="img-responsive" title="HTML+CSS+JS" alt="HTML+CSS+JS"/></div>
-                               <div className="col col-md-4 align-middle"><img src={bootsrapIcon} className="img-responsive" title="Bootstrap" alt="Bootstrap"/></div>
-                               <div className="col col-md-4 align-middle"><img src={saasIcon} className="img-responsive" title="Saas" alt="Saas"/></div>
+                               <div className="col col-md-4 align-middle"><img src={htmlIcon} className="img-fluid" title="HTML+CSS+JS" alt="HTML+CSS+JS"/></div>
+                               <div className="col col-md-4 align-middle"><img src={bootsrapIcon} className="img-fluid" title="Bootstrap" alt="Bootstrap"/></div>
+                               <div className="col col-md-4 align-middle"><img src={saasIcon} className="img-fluid" title="Saas" alt="Saas"/></div>
                            </div>
 
                                   <div className="row">
-                                      <div className="col col-md-4 align-middle"><img src={gulpIcon} className="img-responsive" title="Gulp" alt="Gulp"/></div>
-                                      <div className="col col-md-4 align-middle"><img src={jasmineIcon} className="img-responsive" title="Jasmine" alt="Jasmine"/></div>
-                                      <div className="col col-md-4 align-middle"><img src={babelIcon} className="img-responsive" title="Babel" alt="Babel"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={gulpIcon} className="img-fluid" title="Gulp" alt="Gulp"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={jasmineIcon} className="img-fluid" title="Jasmine" alt="Jasmine"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={babelIcon} className="img-fluid" title="Babel" alt="Babel"/></div>
                                   </div>
 
                                   <div className="row">
-                                      <div className="col col-md-4 align-middle"><img src={nodeIcon} className="img-responsive" title="Node" alt="Node"/></div>
-                                      <div className="col col-md-4 align-middle"><img src={expressIcon} className="img-responsive" title="Express" alt="Express"/></div>
-                                      <div className="col col-md-4 align-middle"><img src={mongoIcon} className="img-responsive" title="MongoDB" alt="MongoDB"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={nodeIcon} className="img-fluid" title="Node" alt="Node"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={expressIcon} className="img-fluid" title="Express" alt="Express"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={mongoIcon} className="img-fluid" title="MongoDB" alt="MongoDB"/></div>
                                   </div>
 
                                   <div className="row">
-                                      <div className="col col-md-4 align-middle"><img src={androidIcon} className="img-responsive" title="Android" alt="Android"/></div>
-                                      <div className="col col-md-4 align-middle"><img src={githubIcon} className="img-responsive" title="Github" alt="Github"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={androidIcon} className="img-fluid" title="Android" alt="Android"/></div>
+                                      <div className="col col-md-4 align-middle"><img src={githubIcon} className="img-fluid" title="Github" alt="Github"/></div>
                                       <div className="col col-md-4 align-middle"></div>
                                   </div>
 

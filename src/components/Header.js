@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 import i18n from './i18n';
@@ -8,6 +7,29 @@ import esIcon from '../img/es_flag.png';
 import enIcon from '../img/uk_flag.png';
 
 class Header extends React.Component {  
+    
+  constructor(props) {
+        super(props);
+        this.state = {
+            activeHome:  true,
+            activeLab: false,
+            activeBlog: false,
+            activeCV: false,
+            activeContact: false
+        };
+    }
+    
+    showActiveItem(sectionId) {
+        
+        this.setState({
+            activeHome:  (sectionId==='home'?true:false),
+            activeLab: (sectionId==='lab'?true:false),
+            activeBlog: (sectionId==='blog'?true:false),
+            activeCV: (sectionId==='cv'?true:false),
+            activeContact: (sectionId==='contact'?true:false)
+        });    
+        
+    }
     
   render() {
       
@@ -18,35 +40,36 @@ class Header extends React.Component {
     const changeLang = this.props.changeLangFunc;
         return (
             <header>
-                      <Navbar fixedTop className="navbar-expand-lg navbar-inverse">
-                          <Navbar.Header>
-                            <Navbar.Brand>
-                              Daniel García Jones
-                            </Navbar.Brand>
-                          </Navbar.Header>
-                          <Nav>
-                            <NavItem eventKey={1}>
-                              <Link to="/">{t(lang,"home")}</Link>
-                            </NavItem>
-                            <NavItem eventKey={2}>
-                              <Link to="/lab">{t(lang,"lab")}</Link>
-                            </NavItem>   
-                            <NavItem eventKey={3}>
-                              <Link to="/cv">{t(lang,"cv")}</Link>
-                            </NavItem> 
-                            <NavItem eventKey={4}>
-                              <Link to="/blog">{t(lang,"blog")}</Link>
-                            </NavItem> 
-                            <NavItem eventKey={5}>
-                              <Link to="/contact">{t(lang,"contact")}</Link>
-                            </NavItem> 
-                          </Nav>
-                          <div className="flagsArea">
-                              <img src={esIcon} alt={t(lang,"es")} title={t(lang,"es")} className="flag" onClick={() => changeLang('es')}/>
-                              <img src={enIcon} alt={t(lang,"en")} title={t(lang,"en")} className="flag" onClick={() => changeLang('en')}/>
-                          </div>                          
-                      </Navbar>          
-                </header>                             
+                <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                  <a className="navbar-brand" href="#">Daniel García Jones</a>
+                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+                  <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                      <li className={this.state.activeHome?"nav-item active": "nav-item"}>
+                        <Link to="/" className="nav-link" onClick={() => this.showActiveItem('home')}>{t(lang,"home")}<span className="sr-only">(current)</span></Link>
+                      </li>
+                      <li className={this.state.activeLab?"nav-item active": "nav-item"}>
+                        <Link to="/lab" className="nav-link" onClick={() => this.showActiveItem('lab')}>{t(lang,"lab")}</Link>
+                      </li>
+                      <li className={this.state.activeCV?"nav-item active": "nav-item"}>
+                        <Link to="/cv" className="nav-link" onClick={() => this.showActiveItem('cv')}>{t(lang,"cv")}</Link>
+                      </li>
+                      <li className={this.state.activeBlog?"nav-item active": "nav-item"}>
+                        <Link to="/blog" className="nav-link" onClick={() => this.showActiveItem('blog')}>{t(lang,"blog")}</Link>
+                      </li>
+                      <li className={this.state.activeContact?"nav-item active": "nav-item"}>
+                        <Link to="/contact" className="nav-link" onClick={() => this.showActiveItem('contact')}>{t(lang,"contact")}</Link>
+                      </li>
+                    </ul>
+                    <span className="navbar-text">
+                      <img src={esIcon} alt={t(lang,"es")} title={t(lang,"es")} className="flag" onClick={() => changeLang('es')}/>
+                      <img src={enIcon} alt={t(lang,"en")} title={t(lang,"en")} className="flag" onClick={() => changeLang('en')}/>
+                    </span>
+                  </div>                          
+                </nav>                
+            </header>                             
         )
      
     
