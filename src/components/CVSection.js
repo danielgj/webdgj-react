@@ -1,5 +1,10 @@
 import React from 'react';
 
+import i18n from './i18n';
+
+import Pdf_ES from '../files/CV-Daniel.GarciaJones.MAY2018-ESP.pdf';
+import Pdf_EN from '../files/CV-Daniel.GarciaJones.MAY2018-ENG.pdf';
+
 class CVSection extends React.Component {
     
     constructor(props) {
@@ -27,43 +32,46 @@ class CVSection extends React.Component {
         
         const lang = this.props.language;
       
-        if(lang==="es") {            
-        
-            return (
+        const t = i18n.getKey;
+
+        return (
             <div className="container mainContent">
                 
                 <div className="separator"/>
 
                 <section>
                     <p className="text-justify">
-                        Inicio mi carrera profesional en el año 2004 en el desarrollo de aplicaciones Java/J2EE. En el año 2005 comienzo a trabajar en desarrollo J2EE en tecnologías SAP Netweaver, conociendo y trabajando con los siguientes productos: SAP ICSS, SAP J2EEngine, WebDynpro Java, JCo, Visual Composer, SAP EP.
+                        {t(lang,"cv_1")}
                     </p>
                     <p className="text-justify">
-                        Adicionalmente, tengo amplios conocimientos de desarrollo Web y Accesibilidad (HTML, CSS, Javascript) y de otros lenguajes y frameworks de desarrollo web.
+                        {t(lang,"cv_2")}
                     </p>
                     <p className="text-justify">
-                        Desde el año 2010, comienzo a trabajar en el área de desarrollo de aplicaciones móviles en múltiples plataformas (iOS, Android, Windows Mobile y Windows Phone) y en el manejo de la Plataforma de Movilidad de SAP (Sybase Unwired Platform y SAP Gateway).
+                       {t(lang,"cv_3")} 
                     </p>
                     <p className="text-justify">
-                        Desde octubre de 2012, realizo tareas de preventa en proyectos de movilidad desde el Centro de Excelencia de Movilidad de Unisys en Madrid dando así mismo soporte técnico a Unisys en EMEA y LATAM.
+                        {t(lang,"cv_4")} 
                     </p>
                     <p className="text-justify">
-                        Actualmente, me encargo del diseño e implementación de la metodología de gestión y desarrollo de proyectos de movilidad y de la adopción de metodologías ágiles en el Grupo de Movilidad de Unisys España.
+                        {t(lang,"cv_5")} 
                     </p>
 
-                    <p className="text-justify">Puedes descargar mi CV resumido en español en el siguiente enlace <a href="https://webdgj-241b4.firebaseapp.com/files/CV-Daniel.GarciaJones.MARZO2018-ESP.pdf" rel="noopener noreferrer" target="_blank">Curriculum Daniel García Marzo 2018</a></p>
+                    <p className="text-justify">{t(lang,"cv_6")}<a href={lang === 'es' ? Pdf_ES : Pdf_EN} rel="noopener noreferrer" target="_blank">{t(lang,"cv_7")}</a></p>
 
-                    <p>
+                    
 
+                    <div style={{display: lang === 'es' ? 'inline' : 'none' }}>                                 
+                        
+                        <p>
                       <button className="btn btn-primary btn-toggle" type="button" id="btn_empleos" onClick={() => this.showCollapsibleByIdAndHideOthers('empleos')}>
-                        Empleos
+                        {t(lang,"empleos")}
                       </button>
 
                      <button className="btn btn-primary btn-toggle" type="button" id="btn_educacion" onClick={() => this.showCollapsibleByIdAndHideOthers('educacion')}>
-                        Educación
+                        {t(lang,"educacion")}
                       </button>
                       <button className="btn btn-primary btn-toggle" type="button" id="btn_certificaciones" onClick={() => this.showCollapsibleByIdAndHideOthers('certs')}>
-                        Certificaciones
+                        {t(lang,"certificaciones")}
                       </button>
                       <button className="btn btn-primary btn-toggle" type="button" id="btn_skills" onClick={() => this.showCollapsibleByIdAndHideOthers('skills')}>
                         Skills
@@ -168,6 +176,8 @@ class CVSection extends React.Component {
                         </div>                      
                     </div>
 
+                </div>
+
 
                 </section>
 
@@ -175,14 +185,7 @@ class CVSection extends React.Component {
 
             </div>
             )
-        } else {
-            return (
-            <div className="container mainContent">
-                <div className="separator"/>
-                <h1>Page under translation. So sorry!</h1>
-            </div>
-        )
-        }
+        
     }
             
 

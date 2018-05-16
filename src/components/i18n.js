@@ -64,7 +64,19 @@ class I18n {
                 "gulp_descr": " Crear un fichero gulp (o similar) para poder automatizar el desarrollo con React.",
                 "babel_usage": " para poder probar y aprender ECMA6",
                 
-                "phone": "Teléfono"
+                "phone": "Teléfono",
+                
+                "cv_1": "Inicio mi carrera profesional en el año 2004 en el desarrollo de aplicaciones Java/J2EE. En el año 2005 comienzo a trabajar en desarrollo J2EE en tecnologías SAP Netweaver, conociendo y trabajando con los siguientes productos: SAP ICSS, SAP J2EEngine, WebDynpro Java, JCo, Visual Composer, SAP EP.",
+                "cv_2": "Adicionalmente, tengo amplios conocimientos de desarrollo Web y Accesibilidad (HTML, CSS, Javascript) y de otros lenguajes y frameworks de desarrollo web.",
+                "cv_3": "Desde el año 2010, comienzo a trabajar en el área de desarrollo de aplicaciones móviles en múltiples plataformas (iOS, Android, Windows Mobile y Windows Phone) y en el manejo de la Plataforma de Movilidad de SAP (Sybase Unwired Platform y SAP Gateway).",
+                "cv_4": "Desde octubre de 2012, realizo tareas de preventa en proyectos de movilidad desde el Centro de Excelencia de Movilidad de Unisys en Madrid dando así mismo soporte técnico a Unisys en EMEA y LATAM.",
+                "cv_5": "Actualmente, me encargo del diseño e implementación de la metodología de gestión y desarrollo de proyectos de movilidad y de la adopción de metodologías ágiles en el Grupo de Movilidad de Unisys España.",
+                "cv_6": " Puedes descargar mi CV resumido en español en el siguiente enlace ",
+                "cv_7": "Curriculum Daniel García Mayo 2018",
+                "empleos": "Empleos",
+                "educacion": "Educación",
+                "certificaciones": "Certificaciones"
+                
                 
             },
             en: {          
@@ -124,7 +136,18 @@ class I18n {
                 "gulp_descr": "",
                 "babel_usage": " to learn and try ECMA6.",
                 
-                "phone": "Phone"
+                "phone": "Phone",
+                
+                "cv_1": "I started my professional career at year 2004 in Java/J2EE development. In year 2005 I started to work in J2EE development with SAP Netweaver Technologies, using following products: SAP ICSS, J2EEngine, WebDynpro Java, JCo, Visual Composer and SAP EP.",
+                "cv_2": "I also have deep knowledge on Web Development and Accessibility (HTML, CSS, Javascript) and other languages like ASP.NET, PHP or Ruby.",
+                "cv_3": "Since year 2010 I work on Mobile Applications development for several platforms (iOS, Android, Windows Mobile and Windows Phone) and SAP MEAP (Sybase Unwired Platform and Gateway).",
+                "cv_4": "Currently in charge of design and deployment of Unisys ESCoE Project Management and Development Methodology and Agile transfornmation.",
+                "cv_5": "",
+                "cv_6": " You can download my resume in the following link ",
+                "cv_7": "Daniel García May 2018 CV",
+                "empleos": "Employment",
+                "educacion": "Education",
+                "certificaciones": "Certs"
             }
         }
         
