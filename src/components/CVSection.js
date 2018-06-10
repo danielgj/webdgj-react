@@ -106,6 +106,7 @@ class CVSection extends React.Component {
                     <div className="card" id="certificaciones" style={{display: this.state.openCerts ? 'inline' : 'none' }}>
                         <div className="card card-body">
                           <ul>
+                            <li><a href="https://www.scrum.org/user/200027" target="_blank" rel="noopener noreferrer">Professional Scrum Product Owner I (Junio 2018)</a></li>
                                <li>SAFe 4.0 Agilist SA (Marzo 2017)</li>
                                <li><a href="https://www.scrum.org/user/200027" target="_blank" rel="noopener noreferrer">Professional Scrum Master I (Octubre 2016)</a></li>
                                <li><a href="https://www.coursera.org/account/accomplishments/specialization/HECEFLSYEGZL" target="_blank" rel="noopener noreferrer">Full Stack Web Development Specialization (Septiembre 2016)</a></li>
