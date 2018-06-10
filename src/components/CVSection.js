@@ -2,8 +2,8 @@ import React from 'react';
 
 import i18n from './i18n';
 
-import Pdf_ES from '../files/CV-Daniel.GarciaJones.MAY2018-ESP.pdf';
-import Pdf_EN from '../files/CV-Daniel.GarciaJones.MAY2018-ENG.pdf';
+import Pdf_ES from '../files/CV-Daniel.GarciaJones.JUN2018-ESP.pdf';
+import Pdf_EN from '../files/CV-Daniel.GarciaJones.JUN2018-ENG.pdf';
 
 class CVSection extends React.Component {
     
