@@ -70,9 +70,9 @@ class I18n {
                 "cv_2": "Adicionalmente, tengo amplios conocimientos de desarrollo Web y Accesibilidad (HTML, CSS, Javascript) y de otros lenguajes y frameworks de desarrollo web.",
                 "cv_3": "Desde el año 2010, comienzo a trabajar en el área de desarrollo de aplicaciones móviles en múltiples plataformas (iOS, Android, Windows Mobile y Windows Phone) y en el manejo de la Plataforma de Movilidad de SAP (Sybase Unwired Platform y SAP Gateway).",
                 "cv_4": "Desde octubre de 2012, realizo tareas de preventa en proyectos de movilidad desde el Centro de Excelencia de Movilidad de Unisys en Madrid dando así mismo soporte técnico a Unisys en EMEA y LATAM.",
-                "cv_5": "Actualmente, me encargo del diseño e implementación de la metodología de gestión y desarrollo de proyectos de movilidad y de la adopción de metodologías ágiles en el Grupo de Movilidad de Unisys España.",
+                "cv_5": "Actualmente, me encargo del diseño e implementación de la metodología de gestión y desarrollo de proyectos de movilidad y de la adopción de metodologías ágiles en el Grupo de Movilidad de Unisys España (contando para ello con las certificaciones PSMI y PSPOI de Scrum.org).",
                 "cv_6": " Puedes descargar mi CV resumido en español en el siguiente enlace ",
-                "cv_7": "Curriculum Daniel García Mayo 2018",
+                "cv_7": "Curriculum Daniel García Junio 2018",
                 "empleos": "Empleos",
                 "educacion": "Educación",
                 "certificaciones": "Certificaciones"
@@ -116,7 +116,7 @@ class I18n {
                 
                 "old_projects": "Old projects",
                 "lab_1": "This section will include several experiments I'm making to learn different techniques. To have this updated, I will also use the blog and list here many old projects.",
-                "lab_2": "Many of them are quite old but all of them allow me to explore different concepts. Probably I will develop them today in a different way.",
+                "lab_2": "Many of them are quite old but all of them allow me to explore different concepts. Probably I would develop them today in a different way.",
                 "lab_3": "Most of them are available in my Github account just in case anyone wants to extend them.",
                 "food_planner_descr": "Android App to configure meal plans and create shared shopping lists. Uses Firebase (Login, Database and Storage).",
                 "more_info": "More info",
@@ -141,10 +141,10 @@ class I18n {
                 "cv_1": "I started my professional career at year 2004 in Java/J2EE development. In year 2005 I started to work in J2EE development with SAP Netweaver Technologies, using following products: SAP ICSS, J2EEngine, WebDynpro Java, JCo, Visual Composer and SAP EP.",
                 "cv_2": "I also have deep knowledge on Web Development and Accessibility (HTML, CSS, Javascript) and other languages like ASP.NET, PHP or Ruby.",
                 "cv_3": "Since year 2010 I work on Mobile Applications development for several platforms (iOS, Android, Windows Mobile and Windows Phone) and SAP MEAP (Sybase Unwired Platform and Gateway).",
-                "cv_4": "Currently in charge of design and deployment of Unisys ESCoE Project Management and Development Methodology and Agile transfornmation.",
+                "cv_4": "Currently in charge of design and deployment of Unisys ESCoE Project Management and Development Methodology and Agile transfornmation (with Scrum.org PSMI and PSPOI certifications).",
                 "cv_5": "",
                 "cv_6": " You can download my resume in the following link ",
-                "cv_7": "Daniel García May 2018 CV",
+                "cv_7": "Daniel García June 2018 CV",
                 "empleos": "Employment",
                 "educacion": "Education",
                 "certificaciones": "Certs"
