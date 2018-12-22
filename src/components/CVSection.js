@@ -2,8 +2,8 @@ import React from 'react';
 
 import i18n from './i18n';
 
-import Pdf_ES from '../files/CV-Daniel.GarciaJones.JUN2018-ESP.pdf';
-import Pdf_EN from '../files/CV-Daniel.GarciaJones.JUN2018-ENG.pdf';
+import Pdf_ES from '../files/CV-Daniel.GarciaJones.DEC2018-ESP.pdf';
+import Pdf_EN from '../files/CV-Daniel.GarciaJones.DEC2018-ENG.pdf';
 
 class CVSection extends React.Component {
     
@@ -44,17 +44,16 @@ class CVSection extends React.Component {
                         {t(lang,"cv_1")}
                     </p>
                     <p className="text-justify">
-                        {t(lang,"cv_2")}
+                       {t(lang,"cv_2")} 
                     </p>
                     <p className="text-justify">
-                       {t(lang,"cv_3")} 
+                        {t(lang,"cv_3")} {t(lang,"cv_4")} 
                     </p>
+
                     <p className="text-justify">
-                        {t(lang,"cv_4")} 
+                        {t(lang,"cv_5")}
                     </p>
-                    <p className="text-justify">
-                        {t(lang,"cv_5")} 
-                    </p>
+                    
 
                     <p className="text-justify">{t(lang,"cv_6")}<a href={lang === 'es' ? Pdf_ES : Pdf_EN} rel="noopener noreferrer" target="_blank">{t(lang,"cv_7")}</a></p>
 
@@ -81,7 +80,10 @@ class CVSection extends React.Component {
 
                     <div className="card" id="empleos" style={{display: this.state.openEmpleos ? 'inline' : 'none' }}>
                         <div className="card card-body">
-                          <h3><b>Unisys (Madrid)</b> desde Marzo 2011.</h3>
+                        <h3><b>Bdeo (Madrid)</b> Desde Diciembre de 2018</h3>
+                            <p className="text-justify">Jefe de Proyecto en Bdeo, insurtech española.</p>
+
+                            <h3><b>Unisys (Madrid)</b> Marzo 2011 - Noviembre 2018</h3>
                             <p className="text-justify">Comencé como Consultor SAP, migré hacia el diseño y desarrollo de apps móviles y actualmente estoy dedicado a la Preventa de Soluciones de Movilidad y a tareas de Jefe de Proyecto, Scrum Master y Arquitecto de Soluciones Móviles. Entre los principales clientes para los que he trabajado se encuentran Enaire, Endesa, Repsol, Vodafone, Telefónica, Claro, Ministerio de Empleo y Seguridad Social, Ministerio de Fomento, EUIPO, IFEMA y TMB.</p>
 
                             <h3><b>ByG Soluciones (Madrid)</b> Junio 2005 – Marzo 2011.</h3>
@@ -149,6 +151,7 @@ class CVSection extends React.Component {
                              <li>Node.js</li>
                              <li>Express</li>
                              <li>Bootstrap</li>
+                             <li>Angular 6</li>
                              <li>Angular.js</li>
                              <li>React.js</li>
                              <li>Java</li>

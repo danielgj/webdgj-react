@@ -45,7 +45,7 @@ class MainSection extends React.Component {
                        <div className="col col-12 col-sm-6">
                            <h1>{t(lang,"bio")}</h1>
                             <p className="text-justify"> 
-                                {t(lang,"mobility_arquitect_at")}<a href="http://www.unisys.es">Unisys</a>{t(lang,"i_do")}
+                                {t(lang,"mobility_arquitect_at")}<a href="http://bdeo.io">Bdeo</a>{t(lang,"i_do")}
                             </p>
 
                             <p  className="text-justify">
@@ -70,10 +70,9 @@ class MainSection extends React.Component {
                                  {t(lang,"about_tech_1")}<i>web</i>{t(lang,"about_tech_2")}<i>{t(lang,"movilidad")}</i>{t(lang,"about_tech_3")}<i>Scrum</i> {t(lang,"about_tech_4")}
                             </p>
                             <p className="text-justify">{t(lang,"about_tech_5")}</p>
-                            <p className="text-justify">{t(lang,"about_tech_6")}</p>
                             <p className="text-justify">{t(lang,"about_tech_7")}</p>
-                            <p className="text-justify">{t(lang,"about_tech_8")}<i>Google Play</i>.</p> 
-                           <p className="text-justify">{t(lang,"about_tech_9")}<Link to="/lab">{t(lang,"lab")}</Link>{t(lang,"about_tech_10")}</p>
+                            <p className="text-justify">{t(lang,"about_tech_8")}<a href="https://play.google.com/store/apps/developer?id=Lulidan+Soft" target="_blank">Google Play</a>.</p> 
+                           <p className="text-justify"> {t(lang,"about_tech_9_1")}<a href="https://osweekends.com/" target="_blank">OSW</a>, {t(lang,"about_tech_9_2")}{t(lang,"about_tech_9")}<Link to="/lab">{t(lang,"lab")}</Link>{t(lang,"about_tech_10")}</p>
                        </div>
                        <div className="col col-12 col-sm-6">
                            <div className="row">
