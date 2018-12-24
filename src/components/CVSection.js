@@ -2,6 +2,7 @@ import React from 'react';
 
 import i18n from './i18n';
 
+import pfc from '../files/dgjonespfc.pdf'
 import Pdf_ES from '../files/CV-Daniel.GarciaJones.DEC2018-ESP.pdf';
 import Pdf_EN from '../files/CV-Daniel.GarciaJones.DEC2018-ENG.pdf';
 
@@ -55,7 +56,7 @@ class CVSection extends React.Component {
                     </p>
                     
 
-                    <p className="text-justify">{t(lang,"cv_6")}<a href={lang === 'es' ? Pdf_ES : Pdf_EN} rel="noopener noreferrer" target="_blank">{t(lang,"cv_7")}</a></p>
+                    <p className="text-justify">{t(lang,"cv_6")}<a href={lang === 'es' ? Pdf_ES : Pdf_EN} download="DGJ-CV.pdf">{t(lang,"cv_7")}</a></p>
 
                     
 
@@ -101,7 +102,7 @@ class CVSection extends React.Component {
                     <div className="card" id="educacion" style={{display: this.state.openEducacion ? 'inline' : 'none' }}>
                         <div className="card card-body">
                           <h3><b>Ingeniero Técnico en Sistemas de Telecomunicación.</b> Universidad Carlos III Madrid (2004).</h3>
-                            <p className="text-justify">Proyecto Fin de Carrera con Matrícula de Honor sobre <a href="https://webdgj-241b4.firebaseapp.com/files/dgjonespfc.pdf" rel="noopener noreferrer" target="_blank">Herramienta CASE de desarrollo de asistentes de navegación Web basada en los diagramas MSC</a></p>
+                            <p className="text-justify">Proyecto Fin de Carrera con Matrícula de Honor sobre <a href={pfc} download="DGJ-PFC.pdf">Herramienta CASE de desarrollo de asistentes de navegación Web basada en los diagramas MSC</a></p>
                         </div>                      
                     </div>
 
